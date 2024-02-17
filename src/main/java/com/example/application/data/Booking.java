@@ -6,20 +6,17 @@ public class Booking {
 
     private String bookingNumber;
     private LocalDate date;
-    private LocalDate bookingTo;
     private Customer customer;
-    private String from;
-    private String to;
+
     private BookingStatus bookingStatus;
     private InsuranceClass insuranceClass;
 
-    public Booking(String bookingNumber, LocalDate date, Customer customer, BookingStatus bookingStatus, String from, String to, InsuranceClass insuranceClass) {
+    public Booking(String bookingNumber, LocalDate date, Customer customer, BookingStatus bookingStatus, InsuranceClass insuranceClass) {
         this.bookingNumber = bookingNumber;
         this.date = date;
         this.customer = customer;
         this.bookingStatus = bookingStatus;
-        this.from = from;
-        this.to = to;
+
         this.insuranceClass = insuranceClass;
     }
 
@@ -39,13 +36,7 @@ public class Booking {
         this.date = date;
     }
 
-    public LocalDate getBookingTo() {
-        return bookingTo;
-    }
 
-    public void setBookingTo(LocalDate bookingTo) {
-        this.bookingTo = bookingTo;
-    }
     public Customer getCustomer() {
         return customer;
     }
@@ -62,20 +53,7 @@ public class Booking {
         this.bookingStatus = bookingStatus;
     }
 
-    public String getFrom() {
-        return from;
-    }
 
-    public void setFrom(String from) {
-        this.from = from;
-    }
-
-    public String getTo() {
-        return to;
-    }
-    public void setTo(String to) {
-        this.to = to;
-    }
 
     public InsuranceClass getBookingClass() {
         return insuranceClass;

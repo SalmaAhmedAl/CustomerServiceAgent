@@ -22,16 +22,7 @@ public class FlightService {
     private void initDemoData() {
         List<String> firstNames = List.of("Abdullah", "Khalid", "Fatma", "Nour", "Hamza", "Reem");
         List<String> lastNames = List.of("Mohammed", "Ali", "Hussain", "Omar", "Ali", "Kareem");
-        List<String> airportCodes = List.of( "Dubai",
-                "Cairo",
-                "Riyadh",
-                "Beirut",
-                "Istanbul",
-                "Paris",
-                "London",
-                "New York",
-                "Tokyo",
-                "Singapore");
+
         Random random = new Random();
 
         var customers = new ArrayList<Customer>();
@@ -40,8 +31,7 @@ public class FlightService {
         for (int i = 0; i < 5; i++) {
             String firstName = firstNames.get(i);
             String lastName = lastNames.get(i);
-            String from = airportCodes.get(random.nextInt(airportCodes.size()));
-            String to = airportCodes.get(random.nextInt(airportCodes.size()));
+
             InsuranceClass insuranceClass = InsuranceClass.values()[random.nextInt(InsuranceClass.values().length)];
             Customer customer = new Customer();
             customer.setFirstName(firstName);
@@ -49,8 +39,8 @@ public class FlightService {
 
             LocalDate date = LocalDate.now().plusDays(2 * i);
 
-            Booking booking = new Booking("10" + (i + 1), date, customer, BookingStatus.CONFIRMED, from, to, insuranceClass);
-            customer.getBookings().add(booking);
+            Booking booking = new Booking("10" + (i + 1), date, customer, BookingStatus.CONFIRMED, insuranceClass);            customer.getBookings().add(booking);
+
 
             customers.add(customer);
             bookings.add(booking);
@@ -81,14 +71,13 @@ public class FlightService {
         return toBookingDetails(booking);
     }
 
-    public void changeBooking(String bookingNumber, String firstName, String lastName, String newDate, String from, String to) {
+    public void changeBooking(String bookingNumber, String firstName, String lastName, String newDate) {
         var booking = findBooking(bookingNumber, firstName, lastName);
         if (booking.getDate().isBefore(LocalDate.now().plusDays(1))) {
             throw new IllegalArgumentException("Booking cannot be changed within 24 hours of the start date.");
         }
         booking.setDate(LocalDate.parse(newDate));
-        booking.setFrom(from);
-        booking.setTo(to);
+
     }
 
     public void cancelBooking(String bookingNumber, String firstName, String lastName) {
@@ -106,8 +95,6 @@ public class FlightService {
                 booking.getCustomer().getLastName(),
                 booking.getDate(),
                 booking.getBookingStatus(),
-                booking.getFrom(),
-                booking.getTo(),
                 booking.getBookingClass().toString()
         );
     }

@@ -18,8 +18,8 @@ public class BookingTools {
     }
 
     @Tool
-    public void changeBooking(String bookingNumber, String firstName, String lastName, String date, String from, String to) {
-        carRentalService.changeBooking(bookingNumber, firstName, lastName, date, from, to);
+    public void changeBooking(String bookingNumber, String firstName, String lastName, String date) {
+        carRentalService.changeBooking(bookingNumber, firstName, lastName, date);
     }
 
     @Tool

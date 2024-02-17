@@ -9,7 +9,6 @@ public record BookingDetails(String bookingNumber,
                              String lastName,
                              LocalDate date,
                              BookingStatus bookingStatus,
-                             String from,
-                             String to,
+
                              String bookingClass) {
 }
