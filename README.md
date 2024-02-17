@@ -1,50 +1,42 @@
-# Funnair Flight Management System
+# MediCareGuard customer support
 
-Welcome to the Funnair Flight Management System! This README provides guidance on common inquiries and actions based on the provided Terms of Service.
+Welcome to the MediCareGuard customer support Management System! This README provides guidance on common inquiries and actions based on the provided Terms of Service.
 
-## Table of Contents
-1. [Cancellation Policy](#cancellation-policy)
-2. [Cancellation Request](#cancellation-request)
-3. [Booking Class Confirmation](#booking-class-confirmation)
-4. [Booking Class Inquiry](#booking-class-inquiry)
-5. [Flight Details Inquiry](#flight-details-inquiry)
-6. [Seat Availability Inquiry](#seat-availability-inquiry)
-7. [Booking Changes Request](#booking-changes-request)
-8. [Booking Status Inquiry](#booking-status-inquiry)
-9. [Booking Status Update Request](#booking-status-update-request)
-10. [Booking Class Confirmation](#booking-class-confirmation-1)
+**Cancellation Policy Inquiry:**
 
-## Cancellation Policy
-- Can you explain the cancellation policy for me, please?
+*Can you explain the cancellation policy for me, please?*
 
-## Cancellation Request
-- Hi, my name is Abdullah Mohammed, and my booking number is 101. Can you please cancel it?
+**Cancellation Request:**
 
-## Booking Class Confirmation
-- Hey! I'm Fatma Hussain. I want to confirm my booking class for booking number 103. Can you assist me with that information, please?
+*Hi, my name is Abdullah Mohammed, and my booking number is 101. Can you please cancel it?*
 
-## Booking Class Inquiry
-- Hello! I'm Abdullah Mohammed. I'd like to know the booking class for flight 101. Could you provide that information for me, please?
+**Booking Class Confirmation Inquiry:**
 
-## Flight Details Inquiry
-- Hey! Hamza Ali here. I'm curious about the flight details for booking number 105. When is it scheduled from Dubai to New York?
+*Hey! I'm Fatma Hussain. I want to confirm my booking class for booking number 103. Can you assist me with that information, please?*
 
-## Seat Availability Inquiry
-- Hi, it's Nour Omar! I have a question about my upcoming flight. Can you tell me if there are any available seats in PREMIUM_ECONOMY for booking number 104?
+**Booking Class Inquiry:**
 
-## Booking Changes Request
-- Greetings! I'm Fatma Hussain. I'd like to make changes to my booking. Is it possible to switch my destination from Paris to Riyadh for booking number 103?
+*Hello! I'm Abdullah Mohammed. I'd like to know the booking class for booking number 101. Could you provide that information for me, please?*
 
-## Booking Status Inquiry
-- Good day! I'm Khalid Ali. Could you please inform me about the booking status for booking number 102? I appreciate your help!
+**Flight Details Inquiry:**
 
-## Booking Status Update Request
-- Hello, I'm Hamza Ali. I have a flight scheduled soon. Can you check if there are any updates on my booking status? My booking number is 105.
+*Hey! Hamza Ali here. I'm curious about the details for booking number 105. When is it scheduled?*
 
-## Booking Class Confirmation
-- Hey! I'm Nour Omar. I want to confirm my booking class for booking number 104. Can you assist me with that information, please?
+**Seat Availability Inquiry:**
 
-Feel free to copy and paste these templates into your README file, and customize as needed.
+*Hi, it's Nour Omar! I have a question about my upcoming booking. Can you tell me if there are any available seats in FAMILY as the booking class for booking number 104?*
+
+**Booking Status Inquiry:**
+
+*Good day! I'm Khalid Ali. Could you please inform me about the booking status for booking number 102? I appreciate your help!*
+
+**Booking Status Update Request:**
+
+*Hello, I'm Hamza Ali. I have a flight scheduled soon. Can you check if there are any updates on my booking status? My booking number is 105.*
+
+**Booking Class Confirmation Inquiry:**
+
+*Hey! I'm Nour Omar. I want to confirm my booking class for booking number 104. Can you assist me with that information, please?*
 
 =======
 

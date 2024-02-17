@@ -11,16 +11,16 @@ public class Booking {
     private String from;
     private String to;
     private BookingStatus bookingStatus;
-    private BookingClass bookingClass;
+    private InsuranceClass insuranceClass;
 
-    public Booking(String bookingNumber, LocalDate date, Customer customer, BookingStatus bookingStatus, String from, String to, BookingClass bookingClass) {
+    public Booking(String bookingNumber, LocalDate date, Customer customer, BookingStatus bookingStatus, String from, String to, InsuranceClass insuranceClass) {
         this.bookingNumber = bookingNumber;
         this.date = date;
         this.customer = customer;
         this.bookingStatus = bookingStatus;
         this.from = from;
         this.to = to;
-        this.bookingClass = bookingClass;
+        this.insuranceClass = insuranceClass;
     }
 
     public String getBookingNumber() {
@@ -77,11 +77,11 @@ public class Booking {
         this.to = to;
     }
 
-    public BookingClass getBookingClass() {
-        return bookingClass;
+    public InsuranceClass getBookingClass() {
+        return insuranceClass;
     }
 
-    public void setBookingClass(BookingClass bookingClass) {
-        this.bookingClass = bookingClass;
+    public void setBookingClass(InsuranceClass insuranceClass) {
+        this.insuranceClass = insuranceClass;
     }
 }

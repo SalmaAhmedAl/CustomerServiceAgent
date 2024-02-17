@@ -42,14 +42,14 @@ public class FlightService {
             String lastName = lastNames.get(i);
             String from = airportCodes.get(random.nextInt(airportCodes.size()));
             String to = airportCodes.get(random.nextInt(airportCodes.size()));
-            BookingClass bookingClass = BookingClass.values()[random.nextInt(BookingClass.values().length)];
+            InsuranceClass insuranceClass = InsuranceClass.values()[random.nextInt(InsuranceClass.values().length)];
             Customer customer = new Customer();
             customer.setFirstName(firstName);
             customer.setLastName(lastName);
 
             LocalDate date = LocalDate.now().plusDays(2 * i);
 
-            Booking booking = new Booking("10" + (i + 1), date, customer, BookingStatus.CONFIRMED, from, to, bookingClass);
+            Booking booking = new Booking("10" + (i + 1), date, customer, BookingStatus.CONFIRMED, from, to, insuranceClass);
             customer.getBookings().add(booking);
 
             customers.add(customer);

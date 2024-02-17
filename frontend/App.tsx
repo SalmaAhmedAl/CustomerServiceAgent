@@ -13,7 +13,7 @@ export default function App() {
     const [working, setWorking] = useState(false);
     const [messages, setMessages] = useState<MessageListItem[]>([{
         userName: 'Assistant',
-        text: 'Welcome to Funnair! How can I help you?',
+        text: 'Welcome to MediCareGuard! How can I help you?',
         userColorIndex: 1
     }]);
     const [bookings, setBookings] = useState<BookingDetails[]>([]);
@@ -67,19 +67,18 @@ export default function App() {
     return (
         <SplitLayout className="h-full">
             <div className="flex flex-col gap-m p-m box-border h-full" style={{width: '30%'}}>
-                <h3>Funnair customer support ✈️</h3>
+                <h3>MediCareGuard customer support </h3>
                 <MessageList items={messages} className="flex-grow"/>
                 <MessageInput onSubmit={e => sendMessage(e.detail.value)}/>
             </div>
             <div className="flex flex-col gap-m p-m box-border" style={{width: '70%'}}>
-                <h3>Bookings database</h3>
+                <h3>Medical Insurance Booking database</h3>
                 <Grid items={bookings} className="flex-shrink-0">
                     <GridColumn path="bookingNumber" autoWidth header="#"/>
                     <GridColumn path="firstName" autoWidth/>
                     <GridColumn path="lastName" autoWidth/>
                     <GridColumn path="date" autoWidth/>
-                    <GridColumn path="from" autoWidth/>
-                    <GridColumn path="to" autoWidth/>
+
                     <GridColumn path="bookingStatus" autoWidth>
                         {({item}) => item.bookingStatus === "CONFIRMED" ? "✅" : "❌"}
                     </GridColumn>
